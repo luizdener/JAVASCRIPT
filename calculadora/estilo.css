@@ -1,0 +1,42 @@
+body{
+    background: rgb(70, 142, 236);
+    font: normal 15pt Arial;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    background: rgb(215, 215, 215);
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+div#tela{
+    font-size: xx-large;
+    text-align: right;
+    background: rgb(215, 215, 215);
+}
+div#tela2{
+    font-size: xx-large;
+    text-align: right;
+    background: rgb(215, 215, 215);
+}
+button{
+    font-size: x-large;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+}
+button#igual{
+    background: rgb(59, 121, 255);
+}

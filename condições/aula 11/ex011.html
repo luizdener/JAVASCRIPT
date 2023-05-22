@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOV.BR</title>
+</head>
+<body>
+    <h1>Sistema de imigração</h1>
+    Informe seu país de origem: <input type="" name="país" id="país">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resultado"></div>
+
+    <script>
+        function verificar(){
+            var país = String(document.getElementById('país').value)
+            var resposta = document.getElementById('resultado')
+
+            if(país.toUpperCase() == 'BRASIL'){
+                resposta.innerText = `Você mora no ${país}, logo você é Brasileiro`
+            }else{
+                resposta.innerText = `Você é do país: ${país}, então aqui você é estrangeiro`
+            }
+        }
+    </script>
+</body>
+</html>

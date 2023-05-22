@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            background: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja
+    </div>
+    <button id="botao" onclick="clickBotao()">
+        Clique aqui
+    </button>
+
+    <script>
+        function clicar(){
+            var msg = window.document.getElementById('area')
+            msg.innerText = 'Clicou'
+            msg.style.background = 'red'
+        }
+        function entrar(){
+            var msg = window.document.getElementById('area')
+            msg.innerText = 'Entrou'
+        }
+        function sair(){
+            var msg = window.document.getElementById('area')
+            msg.innerText = 'Saiu'
+            msg.style.background = 'green'
+        }
+        function clickBotao(){
+            var msg = window.document.getElementById('area')
+            msg.innerText = 'Clicou no botão'
+        }
+    </script>
+</body>
+</html>

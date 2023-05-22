@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>CALCULADORA</h1>
+    </header>
+    <section>
+        <div id="tela2"><p></p></div>
+        <div id="tela">0</div>
+
+        <button id="porc" name="%">%</button>
+
+        <button id="ce" name="ce" onclick="deletar()">CE</button>
+
+        <button id="c" name="c" onclick="deleteAll()">C</button>
+
+        <button id="apagar" onclick="apagar()">&#9003</button>
+
+        <button id="1/x">1/x</button>
+
+        <button id="x²">x²</button>
+
+        <button id="raiz" >²&radic;x</button>
+
+        <button id="divisão" name="/" onclick="operar(this.name)">&divide;</button>
+
+        <button id="sete" name="7" onclick="digitar(this.name)">7</button>
+
+        <button id="oito" name="8" onclick="digitar(this.name)">8</button>
+
+        <button id="nove" name="9" onclick="digitar(this.name)">9</button>
+
+        <button id="mult" name="*" onclick="operar(this.name)">&times;</button>
+
+        <button id="quatro" name="4" onclick="digitar(this.name)">4</button>
+
+        <button id="cinco" name="5" onclick="digitar(this.name)">5</button>
+
+        <button id="seis" name="6" onclick="digitar(this.name)">6</button>
+
+        <button id="subtração" name="-" onclick="operar(this.name)">-</button>
+
+        <button id="um" name="1" onclick="digitar(this.name)">1</button>
+
+        <button id="dois" name="2" onclick="digitar(this.name)">2</button>
+
+        <button id="três" name="3" onclick="digitar(this.name)">3</button>
+
+        <button id="adição" name="+" onclick="operar(this.name)">+</button>
+
+        <button id="maisoumenos">&plusmn;</button>
+
+        <button id="zero" name="0" onclick="digitar(this.name)">0</button>
+
+        <button id="virgula">,</button>
+
+        <button id="igual" name="=" onclick="operar(this.name)">=</button>
+    </section>
+    <footer>
+        <p>&copy; Dener de Jesus</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
